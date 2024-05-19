@@ -51,3 +51,25 @@ function homePage(){
     
 }
 homePage();
+
+function servicesPage(){
+    const btnBox = document.querySelectorAll('.services-box .box-title');
+    const contentBox = document.querySelectorAll('.services-box .box-content');
+    btnBox.forEach((box,index) => {
+        
+        box.addEventListener('click',() => {
+            if(contentBox[index].classList.contains('active')){
+                contentBox[index].classList.remove('active')
+                
+            }else{
+                if(document.querySelector('.box-content.active')){
+                    const oldActive = document.querySelector('.box-content.active');
+                    oldActive.classList.remove('active');
+                }
+                contentBox[index].classList.add('active')
+            }
+            
+        })
+    })
+}
+servicesPage();
