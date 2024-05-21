@@ -73,3 +73,21 @@ function servicesPage(){
     })
 }
 servicesPage();
+
+function blogPage() {
+    const next = document.querySelector('.blog-next');
+    const prev = document.querySelector('.blog-prev');
+
+    next.addEventListener('click',()=>{
+        const blogCarousel = document.querySelector('.blog-carousel');
+        const blogItem = document.querySelectorAll('.blog-item');
+        blogCarousel.append(blogItem[0]);
+    })
+    prev.addEventListener('click',()=>{
+        const blogCarousel = document.querySelector('.blog-carousel');
+        const blogItem = document.querySelectorAll('.blog-item');
+        blogCarousel.prepend(blogItem[blogItem.length - 1]);
+    })
+
+}
+blogPage();
