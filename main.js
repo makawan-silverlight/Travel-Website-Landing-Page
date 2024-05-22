@@ -91,3 +91,33 @@ function blogPage() {
 
 }
 blogPage();
+
+window.addEventListener('scroll',() => {
+    const reveal = document.querySelectorAll('.reveal');
+    reveal.forEach((elem) => {
+        const windowHeight = window.innerHeight;
+        const elemTop = elem.getBoundingClientRect().top;
+        const elemPoint = 150;
+        
+
+        if(elemTop < windowHeight - elemPoint){
+            elem.classList.add('active');
+        }else{
+            elem.classList.remove('active');
+        }
+    })
+    const section = document.querySelectorAll('section[id]')
+    const mobileMenu = document.querySelectorAll('.mobile-menu ul li')
+    const scrollY = window.pageYOffset;
+    section.forEach((elem,index) => {
+        const sectionHeight = elem.offsetHeight;
+        const sectionTop = elem.offsetTop - 58;
+        
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            mobileMenu[index].classList.add('active');
+        }else{
+            mobileMenu[index].classList.remove('active');
+        }
+
+    })
+})

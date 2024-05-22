@@ -43,7 +43,7 @@
             <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
         </ul>
     </nav>
-    <main id="home">
+    <section id="home">
         <section class="list">
             <div class="item active">
                 <img src="https://images.unsplash.com/photo-1521336575822-6da63fb45455?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="picture">
@@ -134,13 +134,13 @@
                 </div>
             </div>
         </section>
-    </main>
+    </section>
 
     <section id="services">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c1c1c" fill-opacity="1" d="M0,160L34.3,144C68.6,128,137,96,206,106.7C274.3,117,343,171,411,192C480,213,549,203,617,186.7C685.7,171,754,149,823,165.3C891.4,181,960,235,1029,240C1097.1,245,1166,203,1234,202.7C1302.9,203,1371,245,1406,266.7L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
 
-        <div class="container-services">
+        <div class="container-services reveal">
             <div class="services-img">
                 <img src="https://images.unsplash.com/photo-1536152470836-b943b246224c?q=80&w=2838&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="services">
             </div>
@@ -191,7 +191,7 @@
     </section>
 
     <section id="package">
-        <div class="container-package">
+        <div class="container-package reveal">
             <div class="package-content">
                 <div class="package-title">
                     <h2>Special Package for you</h2>
@@ -224,7 +224,7 @@
     </section>
     
     <section id="blog">
-        <div class="container-blog">
+        <div class="container-blog reveal">
             <h2>Blogs</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam molestias voluptate fugit doloremque, harum eos explicabo, sed consequuntur a ex cum repellat. Commodi vitae eos voluptate, et officiis totam repudiandae!</p>
             <div class="blog-carousel">
@@ -343,37 +343,125 @@
                     <i class="fa-solid fa-angle-right"></i>
                 </button>
             </div>
-            <div class="bullet">
-                <ul>
-                    <li class="bullet-item"></li>
-                    <li class="bullet-item"></li>
-                    <li class="bullet-item"></li>
-                    <li class="bullet-item"></li>
-                    <li class="bullet-item"></li>
-                    <li class="bullet-item"></li>
-                    <li class="bullet-item"></li>
-                </ul>
-            </div>
+            
         </div>
         
     </section>
       
     <section id="contact">
-        <div class="logo-slider">
-            <div class="scroll-wrap">
-                <div class="scroll">
-                    <img src="./image/travel-logo-01.png" alt="logo">
-                    <img src="./image/travel-logo-02.png" alt="logo">
-                    <img src="./image/travel-logo-03.png" alt="logo">
-                    <img src="./image/travel-logo-04.png" alt="logo">
-                    <img src="./image/travel-logo-05.png" alt="logo">
-                    <img src="./image/travel-logo-06.png" alt="logo">
-                </div>
+        <div class="container-contact reveal">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone Number</h3>
+                            <p>+66 89 XXX XXXX</p>
+                        </div>
+                    </div>
 
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email Address</h3>
+                            <p>hello-world@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Facebook</h3>
+                            <p>SilverTravel</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>123 Anywhere St.,Any City</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <form id="contact-form" name="contact">
+                    <div class="header-form">
+                        <h3>Send Message</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia est deserunt nesciunt. Tenetur.</p>
+                    </div>
+                    <input class="fullname input" type="text" placeholder="Fullname">
+                    <div class="form-info">
+                        <input class="input" type="text" placeholder="Phone Number">
+                        <input class="input" type="email" placeholder="Email Address">
+                    </div>
+                    <textarea class="input" name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                    
+                </form>
             </div>
-            
+            <div class="logo-slider">
+                <div class="scroll-wrap">
+                    <div class="scroll">
+                        <img src="./image/travel-logo-01.png" alt="logo">
+                        <img src="./image/travel-logo-02.png" alt="logo">
+                        <img src="./image/travel-logo-03.png" alt="logo">
+                        <img src="./image/travel-logo-04.png" alt="logo">
+                        <img src="./image/travel-logo-05.png" alt="logo">
+                        <img src="./image/travel-logo-06.png" alt="logo">
+                    </div>
+                </div>
+            </div>
         </div>
+        
     </section>
+
+    <footer>
+        <div class="container-footer reveal">
+            <div class="footer-company">
+                <div class="logo"><a href="#home">SILVER</a></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit?</p>
+            </div>
+            <nav class="footer-nav">
+                <h2>SERVICES</h2>
+                <ul>
+                    <li><a href="#">Service key</a></li>
+                    <li><a href="#">Service car</a></li>
+                    <li><a href="#">Service food</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <h2>PACKAGE</h2>
+                <ul>
+                    <li><a href="#">Package - 1</a></li>
+                    <li><a href="#">Package - 2</a></li>
+                    <li><a href="#">Package - 3</a></li>
+                    <li><a href="#">Package - 4</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <h2>SOCIAL</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <p class="copyright">©2024 MAKAWAN SAENGNGOEN</p>
+        
+    </footer>
 
     <script src="./main.js"></script>
 </body>
